@@ -206,9 +206,15 @@ a.insert(1,4)
 a[2:2]=[34,54]
 print(a)
 del a
-print(a)
+#print(a)
 
-
+"""
+List- 
+Allows Duplicate,
+Any data can be stored
+Insertion order is maintained
+Mmutable- insert, delete, update 
+"""
 #pop()- Removes last element
 #pop(2)- Removes using index
 #remove("dsfdsaf")- Removes using element value
@@ -218,4 +224,22 @@ print(a)
 # my_list.sort()- Sorts in Ascending order.
 # To sort in descending- First sort and then reverse
 # append-> inserts element at the last position
+# insert(0,"dsgsdf")-> Inserts elements at the 0th index
 # my_list.extend([1,2,3])-> inserts 1,2,3 into the list as separate elements
+
+
+##################################################################################
+
+""""
+tuple- 
+Allows Duplicate,
+Any data can be stored
+Insertion order is maintained
+Immutable - No insertion, deletion, updation
+"""
+tuple_a=(11,12,9,10,5,7)
+print("Tuple length is : ",tuple_a.__len__())
+print("To find the index of an element is ",tuple_a.index(11,0,5))
+
+print("Count of items:", tuple_a.count(11))
+print("Present or not:",tuple_a.__contains__(11))

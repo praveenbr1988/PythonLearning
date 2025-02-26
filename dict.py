@@ -15,12 +15,12 @@ word_dict["bike"]= "2 wheel"
 
 #Replace Existing
 word_dict["car"]="4 wheeler"
+word_dict.update({"car":"44 wheeller"})
 
 print(word_dict)
 
 #Delete a key
 word_dict.pop("bike")
-
 print(word_dict)
 
 #Print keys
@@ -56,6 +56,20 @@ orders_dict=dict(order_data)
 print(orders_dict)
 print(type(orders_dict))
 
-#To delete the dictionary
+#To delete items in the dictionary
 orders_dict.clear()
 print(orders_dict)
+
+# to delete the whole dictionary
+a={"age":2}
+print (a)
+del a
+#print (a)
+
+# Iterating a Dict
+fruits={'apple':"high in vitamin c",
+        'banana': "high in potassiium"}
+
+for key in fruits.keys():
+    value=fruits[key]
+    print(key, value)
